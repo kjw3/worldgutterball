@@ -104,6 +104,13 @@
             gap: 20px;
             margin: 40px 0;
         }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
         
         .shot-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -230,6 +237,12 @@
     </style>
 </head>
 <body>
+    <!-- Bowling lane themed background -->
+    <style>
+        body { background: #f5f5dc; }
+        header { background: #4b2e2b; }
+        .button { background: #8b4513; }
+    </style>
     <header>
         <div class="container">
             <h1>GUTTERBALL</h1>
@@ -280,6 +293,15 @@
                 </div>
             </section>
 
+            <section class="visuals">
+                <h2>Bowling Fun</h2>
+                <div class="image-grid">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/07/10/40/bowling-1084287_1280.jpg" alt="Bowling pins" style="width:100%;max-width:300px;border-radius:8px;">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/21/23/28/bowling-575673_1280.jpg" alt="Bowling lane" style="width:100%;max-width:300px;border-radius:8px;">
+                </div>
+                <p style="font-size:0.9em;">Images courtesy of <a href="https://pixabay.com" target="_blank">Pixabay</a> (free for commercial use)</p>
+            </section>
+
             <section>
                 <h2>How to Play</h2>
                 <div class="card">
@@ -287,9 +309,9 @@
                         <li>The lowest score wins – the opposite of regular bowling.</li>
                         <li>Play 10 frames just like regular bowling.</li>
                         <li>Keep the bumpers up on both sides.</li>
-                        <li>If the pins are split, you lose those pins from your score.</li>
+                        <li>If you leave two or more pins split, on your next throw try to roll the ball between them without hitting any pins. If you succeed, subtract the standing pins from your score.</li>
                         <li>Use only the regular bowling balls that the alley provides.</li>
-                        <li>If the first ball gets stuck and the second ball rolls into the gutter and knocks the first ball out, you win right away!</li>
+                        <li>If your first ball gets stuck on the lane, you may try to knock it in with your second ball. If both balls end up in the gutter (no pins knocked down, all 10 pins standing), you win instantly.</li>
                     </ol>
                 </div>
             </section>

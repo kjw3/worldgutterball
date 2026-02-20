@@ -1,6 +1,6 @@
 # World Gutterball
 
-The official site for Gutterball - the game where losing wins!
+Welcome to Gutterball – a fun game where the lowest score wins!
 
 ## Deploying to GitHub Pages
 

@@ -15,6 +15,7 @@ font-family: 'Arial', sans-serif;
 background: #fff;
 min-height: 100vh;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 10px;
@@ -183,7 +184,7 @@ margin-top: 0.05in;
 
 .print-btn {
 display: block;
-margin: 20px auto;
+margin: 15px auto;
 padding: 12px 24px;
 font-size: 14pt;
 font-weight: bold;
@@ -280,6 +281,9 @@ display: none;
 </style>
 </head>
 <body>
+
+<button class="print-btn" onclick="window.print()">Print This Card</button>
+
 <div class="card">
 <div class="header">
 <h1>GUTTERBALL</h1>
@@ -361,8 +365,6 @@ display: none;
 Play on any bowling lane • Standard balls only • © 2013 World Gutterball Association
 </div>
 </div>
-
-<button class="print-btn" onclick="window.print()">Print This Card</button>
 
 </body>
 </html>

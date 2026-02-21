@@ -22,13 +22,14 @@ padding: 10px;
 
 .card {
 width: 8.5in;
-height: 11in;
+height: 10.9in;
 padding: 0.25in;
 border: 3px solid #000;
 background: #fff;
 display: flex;
 flex-direction: column;
 box-sizing: border-box;
+overflow: hidden;
 }
 
 .header {
@@ -177,27 +178,26 @@ font-size: 8pt;
 color: #666;
 border-top: 2px solid #000;
 padding-top: 0.06in;
-margin-top: 0.1in;
+margin-top: 0.05in;
 }
 
 @media print {
-body {
-background: #fff;
-}
-.card {
-border: 3px solid #000;
-box-shadow: none;
-}
+@page {
+size: letter;
+margin: 0.25in;
 }
 
-@media print {
 body {
 padding: 0;
 margin: 0;
 }
+
 .card {
-border: none;
+width: 8in;
+height: 10.5in;
+border: 3px solid #000;
 box-shadow: none;
+page-break-after: avoid;
 page-break-inside: avoid;
 }
 }

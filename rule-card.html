@@ -181,6 +181,25 @@ padding-top: 0.06in;
 margin-top: 0.05in;
 }
 
+.print-btn {
+display: block;
+margin: 20px auto;
+padding: 12px 24px;
+font-size: 14pt;
+font-weight: bold;
+background: #333;
+color: #fff;
+border: 3px solid #000;
+border-radius: 8px;
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.print-btn:hover {
+background: #000;
+}
+
 @media print {
 @page {
 size: letter;
@@ -252,6 +271,10 @@ font-size: 10pt;
 
 .footer {
 font-size: 9pt;
+}
+
+.print-btn {
+display: none;
 }
 }
 </style>
@@ -338,5 +361,8 @@ font-size: 9pt;
 Play on any bowling lane • Standard balls only • © 2013 World Gutterball Association
 </div>
 </div>
+
+<button class="print-btn" onclick="window.print()">Print This Card</button>
+
 </body>
 </html>
